@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Midterm Prep</title>
+  <script src="angular/angular.min.js"></script>
+  <script src="router/angular-ui-router.min.js"></script>
+  <script src="jquery/jquery.slim.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" ui-sref="main">Election</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" ui-sref-active="active" ui-sref="main">Main</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" ui-sref-active="active" ui-sref="admin">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" ui-sref-active="active" ui-sref="voter">Voter</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <ui-view></ui-view>
+  </div>
+</body>
+
+</html>
